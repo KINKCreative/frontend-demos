@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - Slide Transitions</title>
+
+		<link rel="stylesheet" href="../../css/reveal.css">
+		<link rel="stylesheet" href="../../css/theme/tps.css" id="theme">
+		<style type="text/css" media="screen">
+			.slides section.has-dark-background,
+			.slides section.has-dark-background h3 {
+				color: #fff;
+			}
+			.slides section.has-light-background,
+			.slides section.has-light-background h3 {
+				color: #222;
+			}
+			/* .slides {
+				position:  absolute;
+				top:  0 !important;
+				right:  0 !important;
+				bottom:  0 !important;
+				left:  0 !important;
+				width:  100vw !important;
+				transform:  none !important;
+			} */
+			.reveal .slide-background {
+				background-size: contain !important;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+
+				<section data-background-transition="slide" data-background="assets/pic1.jpg">
+					<h2>Page 1</h2>
+				</section>
+				<section data-background-transition="slide" data-background="assets/pic2.jpg">
+					<h2>Page 2</h2>
+				</section>
+				<section data-background-transition="slide" data-background="assets/pic3.jpg">
+					<h2>Page 3</h2>
+				</section>
+				<section data-background-transition="slide" data-background="assets/pic4.jpg">
+					<h2>Page 4</h2>
+				</section>
+				<section data-background-transition="slide" data-background="assets/pic5.jpg">
+					<h2>Page 5</h2>
+				</section>
+				<section data-background-transition="slide" data-background="assets/pic1.jpg">
+					<h2>Page 6</h2>
+				</section>
+				<section>
+					<section data-background-transition="slide" data-background="assets/pic4.jpg">
+						<h2>Page 6 - Info 1</h2>
+					</section>
+					<section data-background-transition="slide" data-background="assets/pic1.jpg">
+						<h2>Page 6 - Info 2</h2>
+					</section>
+					<section data-background-transition="slide" data-background="assets/pic2.jpg">
+						<h2>Page 6 - Info 3</h2>
+					</section>
+					<section data-background-transition="slide" data-background="assets/pic3.jpg">
+						<h2>Page 6 - Info 4</h2>
+					</section>
+				</section>
+				<section data-background-transition="slide" data-background="assets/pic5.jpg">
+					<h2>Page 7</h2>
+				</section>
+				<section data-background-transition="slide" data-background="assets/pic1.jpg">
+					<h2>Page 8</h2>
+				</section>
+				<section data-background-transition="slide" data-background="assets/pic2.jpg">
+					<h2>You get the point...</h2>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="../../lib/js/head.min.js"></script>
+		<script src="../../js/reveal.js"></script>
+
+		<script>
+
+			Reveal.initialize({
+				center: true,
+				history: true,
+				overview: false
+				// transition: 'slide',
+				// transitionSpeed: 'slow',
+				// backgroundTransition: 'slide'
+			});
+
+		</script>
+
+	</body>
+</html>
